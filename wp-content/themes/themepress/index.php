@@ -16,16 +16,16 @@
 get_header(); ?>
 
 <div id="page" role="main">
-	<article class="main-content">
+	<article class="row medium-up-3">
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+			<?php get_template_part( 'template-parts/content-behance', get_post_format() ); ?>
 		<?php endwhile; ?>
 
 		<?php else : ?>
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content-behance', 'none' ); ?>
 
 		<?php endif; // End have_posts() check. ?>
 
@@ -42,7 +42,6 @@ get_header(); ?>
 		<?php endif; ?>
 
 	</article>
-	<?php get_sidebar(); ?>
 
 </div>
 
