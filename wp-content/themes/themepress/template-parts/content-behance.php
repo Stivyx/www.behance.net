@@ -26,8 +26,8 @@ $imageavatar = get_field('image_de_profil');
 			</figcaption>
 		</figure>
 		<div class="infos-projet text-center">
-			<p class="medium-6 column" ><i class="fa fa-eye"></i><br>  <?php echo get_field('nombre_de_vues'); ?></p>
-			<p class="medium-6 column" ><i class="fa fa-thumbs-o-up"></i><br>  <?php echo get_field('nombre_de_likes'); ?></p>
+			<p class="small-6 column" ><i class="fa fa-eye"></i><br>  <?php echo get_field('nombre_de_vues'); ?></p>
+			<p class="small-6 column" ><i class="fa fa-thumbs-o-up"></i><br>  <?php echo get_field('nombre_de_likes'); ?></p>
 			<img class="avatar" src="<?php echo $imageavatar['url']; ?>">
 		</div>
 	</div>
