@@ -15,6 +15,8 @@ add_image_size( 'featured-small', 640, 200, true ); // name, width, height, crop
 add_image_size( 'featured-medium', 1280, 400, true );
 add_image_size( 'featured-large', 1440, 400, true );
 add_image_size( 'featured-xlarge', 1920, 400, true );
+add_image_size( 'visuel-listing', 300, 300, true );
+add_image_size( 'visuel-projet', 300, 220, true );
 
 // Add additional image sizes
 add_image_size( 'fp-small', 640 );
@@ -29,6 +31,8 @@ function foundationpress_custom_sizes( $sizes ) {
 		'fp-medium' => __( 'FP Medium' ),
 		'fp-large'  => __( 'FP Large' ),
 		'fp-xlarge'  => __( 'FP XLarge' ),
+		'visuel-listing'  => __( 'Visuel Listing' ),
+		'visuel-listing'  => __( 'visuel-projet' ),
 	) );
 }
 add_filter( 'image_size_names_choose', 'foundationpress_custom_sizes' );
